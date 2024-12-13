@@ -1,0 +1,70 @@
+.favorite-photos-container {
+    /* Make sure the photo list does not go out of the paper element (the parent) */
+    max-height: 100%;
+    overflow-y: auto;
+}
+
+.favorite-photos-header {
+    padding-bottom: 10px;
+}
+
+.favorite-photos-header-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.favorite-photos-grid {
+    /* Display all of the favorite photos in a grid (responsive to window size) */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 10px;
+    justify-items: center;
+}
+
+
+.favorite-photo-thumbnail-container {
+    border: 1px solid lightgrey;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: rgba(241, 203, 15, 0.36);
+    width: 80%;
+
+    text-align: left;
+}
+
+.favorite-photo-thumbnail-container-thumbnail-remove-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.favorite-photo-thumbnail {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: block;
+
+    object-fit: cover;
+}
+
+.favorite-photo-remove-favorite-button {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.favorite-photo-thumbnail-button {
+    all: unset;
+    cursor: pointer;
+}
+
+.favorite-photo-modal-image {
+    width: 100%;
+    max-width: 500px;
+    max-height: 500px;
+    object-fit: contain; /* Make the image keep its aspect ratio */
+    margin-bottom: 10px;
+}

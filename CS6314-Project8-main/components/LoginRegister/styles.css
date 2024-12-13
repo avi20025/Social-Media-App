@@ -1,0 +1,5 @@
+.login-page-container {
+    text-align: center;
+    max-height: 100%;
+    overflow-y: auto;
+}

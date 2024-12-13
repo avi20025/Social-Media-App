@@ -1,0 +1,32 @@
+/* Photos */
+.users-photos-wrapper {
+  text-align: center;
+
+  /* Make sure the photo list does not go out of the paper element (the parent) */
+  max-height: 100%;
+  overflow-y: auto;
+}
+
+.users-photos-wrapper-header {
+  padding-bottom: 10px;
+}
+
+.users-photos-wrapper-photo-box {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+
+  border: lightgrey 2px solid;
+  border-radius: 5px;
+}
+
+.users-photos-wrapper-photo-box-image {
+  width: 60%;
+  max-width: 500px;
+  max-height: 500px;
+  object-fit: contain; /* Make the image keep its aspect ratio */
+}
+
+.users-photos-wrapper-photo-time {
+  font-style: italic;
+}

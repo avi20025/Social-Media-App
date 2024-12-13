@@ -1,0 +1,9 @@
+.user-list-header {
+  text-align: center;
+  padding-bottom: 5px;
+}
+
+.side-list {
+  max-height: 100%;
+  overflow-y: auto;
+}
